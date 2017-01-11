@@ -514,8 +514,6 @@ A [material design implementation of a data table](https://www.google.com/design
 					columns.forEach(function(column) {
 						if(!column.beenAttached.state.ready){
 							column.parentNodeRef = this;
-							console.log(this)
-							console.log(column)
 							this.async(function(){
 								column._registerEvilFunctions();
 								column.beenAttached.ready();
