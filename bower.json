@@ -2,8 +2,13 @@
   "name": "paper-datatable",
   "version": "1.0.0",
   "authors": [
-    "David Mulder <david.mulder@ymail.com>"
+    "David Mulder <david.mulder@ymail.com>",
+    "Erik Perez <eap@1881.no>"
   ],
+    "repository": {
+    "type": "git",
+    "url": "git://github.com/dev1881/paper-datatable"
+  },
   "description": "Material design data table.",
   "keywords": [
     "web-component",
@@ -12,11 +17,10 @@
     "data-table"
   ],
   "main": [
-    "paper-datatable.html",
-    "paper-datatable-card.html"
+    "paper-datatable.html"
   ],
   "license": "http://www.gnu.org/licenses/gpl-3.0.en.html",
-  "homepage": "https://github.com/David Mulder/paper-datatable/",
+  "homepage": "https://github.com/dev1881/paper-datatable",
   "ignore": [
     "/.*",
     "/test/"
