@@ -5,7 +5,7 @@
     "David Mulder <david.mulder@ymail.com>",
     "Erik Perez <eap@1881.no>"
   ],
-    "repository": {
+  "repository": {
     "type": "git",
     "url": "git://github.com/dev1881/paper-datatable"
   },
@@ -44,5 +44,9 @@
     "paper-menu": "PolymerElements/paper-menu#~1.1.1",
     "paper-dropdown-menu": "PolymerElements/paper-dropdown-menu#~1.1.0",
     "paper-input": "PolymerElements/paper-input#~1.0.18"
+  },
+  "resolutions": {
+    "polymer": "^1.5.0",
+    "paper-styles": "^1.1.0"
   }
 }
