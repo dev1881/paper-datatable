@@ -3,6 +3,9 @@
  it is written in a way that will allow this later to be added without rewriting the rest of the code and right now
  'emulates' the behaviour by having a fixed maximum of items.
  */
+ /*
+ TODO: Need to figure out if we need this
+ */
 var WeakCache = function(limit){
 	var values = [];
 	var keys = [];
