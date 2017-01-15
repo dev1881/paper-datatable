@@ -1,4 +1,6 @@
-# paper-datatable
+# dm1881-paper-datatable (ES5 compatible)
+
+
 
 A [material design implementation of a data table](https://www.google.com/design/spec/components/data-tables.html). Let's call this a pretty solid beta.
 
@@ -36,7 +38,7 @@ A [material design implementation of a data table](https://www.google.com/design
 
 The element can be installed using bower using
 
-    bower install --save paper-datatable
+    bower install --save dm1881-paper-datatable
 
 **Important:** If you wish to use `<paper-datatable-card>` you need the paper elements listed in `devDependencies` as well. They are not listed as normal dependencies to prevent them from being pulled in on production if you do not need them.
 
@@ -61,13 +63,12 @@ donate please contact me personally.
 
 ## Contributing
 
-I absolutely HATE rejecting pull requests, so let me just outline some advice:
+We love contribution. We'd love to get pull requests on your improvements!
 
+Two simple rules:
  1. If you are planning on doing anything except a quick fix, it's a wise idea to open an issue first with your plans. That
     way we can talk it through and check whether it might not already be easily possible and whether it fits with the
     spirit of the component (I try to keep everything pretty declarative, generic and Polymer-y).
  2. You absolutely *must* make every feature you work on at least a separate commit and ideally a separate pull request.
     This both makes it clearer to me what is what, makes it easier to pull only the relevant parts and prevents situations
     where I can't give credits to the good parts, because of the bad parts.
- 3. You have to explicitly agree in your pull request to the terms described in the
-    [fair share license construction](https://github.com/David-Mulder/fair-share-license/blob/master/CONTRIBUTING.md).
