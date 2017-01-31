@@ -574,7 +574,22 @@ A [material design implementation of a data table](https://www.google.com/design
 					delete cell.dataColumn;
 					delete cell.instance;
 				},
+				getPropByString : function(obj, propString) {
+				    if (!propString)
+				        return obj;
 
+				    var objectPath = propString.split('.');
+
+						for (var i = 0; i < objectPath.length; i++) {
+							var key = objectPath[i];
+							if(obj[key] != undefined && typeof(obj[key]) == 'object'){
+								objectPath.splice(0, 1);
+								return this.getPropByString(obj[key], objectPath.join('.'))
+							}else {
+								return obj[key]
+							}
+						}
+				},
 				_restructureData: function(){
 
 					this.debounce('restructure data', function(){
@@ -601,7 +616,7 @@ A [material design implementation of a data table](https://www.google.com/design
 								if(isEmpty || isWrongRow || isWrongColumn){
 									cell.removeAttribute('data-empty');
 									var prop = cell.dataColumn.property;
-									var data = rowData[prop];
+									var data = this.getPropByString(rowData,prop);
 
 									cell.setAttribute('data-row-key', row.dataset.key);
 									cell.dataBoundColumn = cell.dataColumn;
@@ -634,7 +649,7 @@ A [material design implementation of a data table](https://www.google.com/design
 										//cell.textContent = data;
 									}
 								}
-							});
+							}, this);
 
 						}
 					});
